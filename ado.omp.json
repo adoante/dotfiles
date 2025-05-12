@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#8BE9FD",
+          "style": "diamond",
+          "properties": {
+            "always_enabled": true
+          },
+          "template": "<#FFFFFF>\uf007 </><b>{{ .UserName }}</b> ",
+          "type": "session"
+        },
+        {
+          "foreground": "#FFD33B",
+          "style": "diamond",
+          "template": "<#3776AB> </>{{.Venv }} ",
+          "type": "python"
+        },
+        {
+          "foreground": "#F1FA8C",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "diamond",
+          "template": "<#42E66C>\ueaf7 </><b>{{ .Path }}</b> ",
+          "type": "path"
+        },
+        {
+          "foreground": "#43CCEA",
+          "properties": {
+            "branch_icon": ""
+          },
+          "style": "diamond",
+          "template": "<#ffffff>\u26A1</><b>{{ .HEAD }}</b> ",
+          "type": "git"
+        },
+        {
+          "foreground": "#FF5555",
+          "style": "diamond",
+          "properties": {
+            "always_enabled": false  // only show on error
+          },
+          "template": "<#FF5555>\u26A0 {{ .Code }} </>",
+          "type": "status"
+        },
+        {
+          "foreground": "#ff0000",
+          "style": "diamond",
+          "template": "<#ff0000>\u25C9</>",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#FFFFFF",
+          "style": "plain",
+          "template": ">",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 3,
+  "console_title_template": "{{ .Shell }} : {{ .UserName }} @ {{ .HostName }} in {{.PWD}}"
+}
