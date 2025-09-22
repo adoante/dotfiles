@@ -1,1 +1,0 @@
-/home/adoante/.config/fish/config.fish
