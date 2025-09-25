@@ -24,7 +24,7 @@ alias gco="git checkout"
 alias gi="git init"
 alias gcl="git clone" 
 
-status --is-interactive; and oh-my-posh init fish --config /home/adoante/dotfiles/ado.omp.json | source
+starship init fish | source
 
 set -gx CONDA_CHANGEPS1 false
 
