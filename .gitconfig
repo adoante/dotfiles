@@ -1,0 +1,32 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[user]
+	email = adolfogante@gmail.com
+	name = Adolfo Gante
+	signingkey = adolfogante@gmail.com
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = main
+
+[status]
+	branch = true
+
+[core]
+	editor = nvim
+
+[push]
+	autoSetupRemote = true
+	default = current
+
+[pull]
+	default = current
+
+[log]
+	graphColors = green, yellow, cyan, magenta, blue, red
