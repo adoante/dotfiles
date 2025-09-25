@@ -10,8 +10,30 @@
 	email = adolfogante@gmail.com
 	name = Adolfo Gante
 	signingkey = adolfogante@gmail.com
+
 [commit]
 	gpgSign = true
+	verbose = true
+
+[rerere]
+
+
+[column]
+	ui = auto
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	gpgSign = true
+	sort = version:refname
+
+[diff]
+	algorithm = histogram
+	colorMoved = true
+	mnemonicPrefix = true
+	renames = true
+
 [init]
 	defaultBranch = main
 
@@ -24,9 +46,19 @@
 [push]
 	autoSetupRemote = true
 	default = current
+	followTags = true
 
 [pull]
 	default = current
+
+[fetch]
+	prune = true
+
+[merge]
+	conflictstyle = zdiff3
+	
+[help]
+	autocorrect = prompt
 
 [log]
 	graphColors = green, yellow, cyan, magenta, blue, red
