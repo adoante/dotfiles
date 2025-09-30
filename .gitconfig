@@ -15,7 +15,8 @@
 	gpgSign = true
 	verbose = true
 
-[rerere]
+[advice]
+	addIgnoredFile = false
 
 
 [column]
