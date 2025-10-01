@@ -2,30 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# alias
-alias bat="batcat"
-alias fzf-bat="fzf --preview 'bat --style=numbers --color=always {}'"
-
-## git 
-alias gs="git status"
-
-alias gd="git diff"
-
-alias ga="git add"
-alias gc="git commit"
-
-alias gp="git push"
-alias gu="git pull"
-
-alias gl="git log --all --graph --pretty=format:'%C(yellow)%h %C(cyan)%an %C(white)%ar %C(auto)%D %n%n%C(white)%s%n'"
-alias gb="git branch -r"
-alias gco="git checkout"
-
-alias gi="git init"
-alias gcl="git clone" 
-
-starship init fish | source
-
 set -gx CONDA_CHANGEPS1 false
 
 # >>> conda initialize >>>
@@ -60,3 +36,27 @@ fzf --fish | source
 # zoxide
 set -x _ZO_ECHO '1'
 zoxide init fish | source
+
+# alias
+alias bat="batcat"
+alias fzf-bat="fzf --preview 'bat --style=numbers --color=always {}'"
+
+## git 
+alias gs="git status"
+
+alias gd="git diff"
+
+alias ga="git add"
+alias gc="git commit"
+
+alias gp="git push"
+alias gu="git pull"
+
+alias gl="git log --all --graph --pretty=format:'%C(yellow)%h %C(cyan)%an %C(white)%ar %C(auto)%D %n%n%C(white)%s%n'"
+alias gb="git branch -r"
+alias gco="git checkout"
+
+alias gi="git init"
+alias gcl="git clone" 
+
+starship init fish | source
