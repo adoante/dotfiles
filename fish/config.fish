@@ -53,7 +53,7 @@ alias gp="git push"
 alias gu="git pull"
 
 alias gl="git log --all --graph --pretty=format:'%C(yellow)%h %C(cyan)%an %C(white)%ar %C(auto)%D %n%n%C(white)%s%n'"
-alias gb="git branch -r"
+alias gb="git branch"
 alias gco="git checkout"
 
 alias gi="git init"
