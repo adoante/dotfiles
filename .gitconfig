@@ -9,10 +9,10 @@
 [user]
 	email = adolfogante@gmail.com
 	name = Adolfo Gante
-#	signingkey = adolfogante@gmail.com
+	signingkey = adolfogante@gmail.com
 
 [commit]
-#	gpgSign = true
+	gpgSign = true
 	verbose = true
 
 [advice]
@@ -26,7 +26,7 @@
 	sort = -committerdate
 
 [tag]
-#	gpgSign = true
+	gpgSign = true
 	sort = version:refname
 
 [diff]
