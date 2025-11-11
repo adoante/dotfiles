@@ -18,7 +18,6 @@
 [advice]
 	addIgnoredFile = false
 
-
 [column]
 	ui = auto
 
@@ -56,8 +55,8 @@
 	prune = true
 
 [merge]
-	conflictstyle = zdiff3
-	
+  conflictstyle = zdiff3
+
 [help]
 	autocorrect = prompt
 
