@@ -1,0 +1,64 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[user]
+	email = adolfogante@gmail.com
+	name = Adolfo Gante
+	signingkey = adolfogante@gmail.com
+
+[commit]
+	gpgSign = true
+	verbose = true
+
+[advice]
+	addIgnoredFile = false
+
+[column]
+	ui = auto
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	gpgSign = true
+	sort = version:refname
+
+[diff]
+	algorithm = histogram
+	colorMoved = true
+	mnemonicPrefix = true
+	renames = true
+
+[init]
+	defaultBranch = main
+
+[status]
+	branch = true
+
+[core]
+	editor = nvim
+
+[push]
+	autoSetupRemote = true
+	default = current
+	followTags = true
+
+[pull]
+	default = current
+
+[fetch]
+	prune = true
+
+[merge]
+  conflictstyle = zdiff3
+
+[help]
+	autocorrect = prompt
+
+[log]
+	graphColors = green, yellow, cyan, magenta, blue, red
