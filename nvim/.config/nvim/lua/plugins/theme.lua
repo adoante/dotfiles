@@ -1,0 +1,1 @@
+/home/adoante/.config/omarchy/current/theme/neovim.lua
