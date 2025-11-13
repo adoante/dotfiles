@@ -19,10 +19,8 @@ zoxide init fish | source
 set -U fish_greeting ""
 
 # alias
-alias bat="batcat"
-alias fzf-bat="fzf --preview 'bat --style=numbers --color=always {}'"
 
-## git
+## Git
 alias gs="git status"
 
 alias gd="git diff"
