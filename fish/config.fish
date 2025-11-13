@@ -22,7 +22,7 @@ set -U fish_greeting ""
 alias bat="batcat"
 alias fzf-bat="fzf --preview 'bat --style=numbers --color=always {}'"
 
-## git 
+## git
 alias gs="git status"
 
 alias gd="git diff"
@@ -39,3 +39,10 @@ alias gco="git checkout"
 
 alias gi="git init"
 alias gcl="git clone"
+
+# File System
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias lsa='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
