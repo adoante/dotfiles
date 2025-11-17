@@ -15,6 +15,8 @@ fzf --fish | source
 set -x _ZO_ECHO 1
 zoxide init fish | source
 
+mise activate fish | source
+
 # Greeting
 set -U fish_greeting ""
 
